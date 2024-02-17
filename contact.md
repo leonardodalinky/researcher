@@ -3,13 +3,13 @@ layout: default
 is_contact: true
 ---
 
-* Email: [foo@xyz.com](mailto:foo@xyz.com)
+* Email: [leonard.keilin@gmail.com](mailto:leonard.keilin@gmail.com)
 
-* Phone: [+91-123123](tel:+91-123123)
+* Phone: [+86-137 117 15601](tel:+86-137 117 15601)
 
 ---
 
-## Mailing Address
+<!-- ## Mailing Address
 
 > 221B, Baker Street
 >
@@ -17,10 +17,9 @@ is_contact: true
 >
 > United Kingdom
 
----
+--- -->
 
 ## Social
 
-1. [Facebook](#)
-2. [Twitter](#)
-3. [Google+](#)
+1. [Google+](https://scholar.google.com/citations?user=FPaobEgAAAAJ)
+2. [LinkedIn](https://linkedin.com/in/ke-lin-7890112b5/)

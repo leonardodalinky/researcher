@@ -1,5 +1,6 @@
-title: Researcher
-url: "https://ankitsultana.com"
+author: Ke Lin
+title: Ke Lin
+url: "https://ayajike.xyzleonardodalinky.github.io"
 baseurl: "/researcher"
 
 markdown: kramdown
@@ -8,8 +9,8 @@ markdown: kramdown
 tracking_id: #
 
 footer: yes
-footer_url: "https://github.com/ankitsultana"
-footer_text: "Page design by Ankit Sultana"
+footer_url: "https://github.com/leonardodalinky"
+footer_text: "Page designed by Ankit Sultana and modified by K. Lin"
 
 sass:
     style: compressed
