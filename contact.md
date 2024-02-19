@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Contact K. Lin
 is_contact: true
 ---
 
