@@ -14,7 +14,7 @@ Hi! I am a second year graduate student of Software Engineering at Tsinghua Univ
 My current research interests include:
 * LLM watermarking
 * AI privacy
-* zero-shot LLM applications
+* zero-shot & multi-modal LLM applications
 
 I am also interested in LLM generation and trustworthy LLMs.
 
