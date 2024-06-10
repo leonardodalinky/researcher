@@ -2,6 +2,7 @@ author: Ke Lin
 title: Ke Lin
 url: "https://leonardodalinky.github.io"
 baseurl: "/researcher"
+description: "About Ke Lin"
 
 markdown: kramdown
 #ins_logo: "./bits-logo.png"
