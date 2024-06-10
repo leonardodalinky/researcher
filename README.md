@@ -8,6 +8,16 @@ A clean, single column, monospace resume template built for jekyll
 
 Simply fork the repository and edit away.
 
+Install `jekyll`:
+```bash
+gem install jekyll bundler
+```
+
+And run `bundle`:
+```bash
+bundle exec jekyll serve
+```
+
 #### Installation via remote themes
 
 * Just setting `remote_theme: ankitsultana/researcher@gem` in `_config.yml` should work. Although in that case, I am not sure how

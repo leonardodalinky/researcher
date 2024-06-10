@@ -3,6 +3,7 @@
  */
 
 $accent: #FF0F00;
+$profile-image-size: 240px;
 $image-size: 85px;
 
 /*
@@ -12,3 +13,8 @@ $image-size: 85px;
 $max-width: 700px;
 $med-width: 600px;
 $small-width: 480px;
+
+// Override Sass min() for older version compatibility
+@function min($numbers...) {
+    @return m#{i}n(#{$numbers});
+}

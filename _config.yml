@@ -1,6 +1,6 @@
 author: Ke Lin
 title: Ke Lin
-url: "https://ayajike.xyzleonardodalinky.github.io"
+url: "https://leonardodalinky.github.io"
 baseurl: "/researcher"
 
 markdown: kramdown
@@ -13,13 +13,12 @@ footer_url: "https://github.com/leonardodalinky"
 footer_text: "Page designed by Ankit Sultana and modified by K. Lin"
 
 sass:
-    style: compressed
-    sass_dir: _sass
+  sass_dir: _sass
 
 nav:
- - name: "About"
-   link: "/researcher/"
- - name: "Resume"
-   link: "resume.pdf"
- - name: "Contact"
-   link: "contact"
+  - name: "About"
+    link: "/researcher/"
+  - name: "CV"
+    link: "CV_KeLin.pdf"
+  - name: "Contact"
+    link: "contact"

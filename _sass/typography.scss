@@ -10,9 +10,8 @@
     }
 
     ol>li {
-        list-style-position: none;
         position: relative;
-        list-style: none;
+        // list-style: none;
         margin-top: 5px;
         margin-bottom: 5px;
     }
@@ -23,19 +22,19 @@
 
     ul {
         padding: 0 20px 0 20px;
-        ;
     }
 
     ol {
         padding: 0 30px 0 30px;
     }
 
-    ol>li:before {
-        content: "[" counter(list, decimal) "] ";
-        counter-increment: list;
-        position: absolute;
-        left: -30px;
-    }
+    // reference-like ordered list
+    // ol>li:before {
+    //     content: "[" counter(list, decimal) "] ";
+    //     counter-increment: list;
+    //     position: absolute;
+    //     left: -30px;
+    // }
 
     blockquote {
         //border: 1px solid black;
@@ -45,28 +44,223 @@
         font-style: italic;
     }
 
-    .profile-picture {
-        // height: $image-size;
-        width: $image-size;
-        position: relative;
-        margin: -10px 0 0 15px;
-        float: right;
-        border-radius: 50%;
+    img {
+        text-align: center;
+        width: 100%;
+    }
 
-        p & {
-            padding: 0;
+    /* ***************
+    *                *
+    *    About Me    *
+    *                *
+    *************** */
+    .aboutme {
+        display: flex;
+        flex-flow: row wrap-reverse;
+        justify-content: space-around;
+
+        .profile-picture {
+            width: $profile-image-size;
+            position: relative;
             margin: 0;
+            // border-radius: 50%;
         }
 
-        @media (max-width: $small-width) {
-            img {
-                margin-top: -5px;
+        .aboutme-content {
+            width: calc($max-width - $profile-image-size - 32px);
+
+            @media screen and (max-width: $small-width) {
+                width: 100%;
             }
         }
     }
 
-    img {
-        text-align: center;
-        width: 100%;
+    /* ****************
+    *                 *
+    *    Education    *
+    *                 *
+    **************** */
+    .education .education-block {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+
+        margin: 0 0 20px 0;
+
+        div {
+            margin: 0 0 4px 0;
+        }
+
+        &>div {
+            margin: 0 0 0 12px;
+        }
+
+        .education-school {
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        $mleft: 12px;
+
+        .education-degree {
+            font-style: italic;
+            margin-left: $mleft;
+        }
+
+        .education-date {
+            font-weight: bold;
+            font-size: small;
+            margin-left: $mleft;
+        }
+
+        .education-score {
+            margin-left: $mleft;
+        }
+
+        img {
+            width: 16%;
+        }
+    }
+
+    .education>.education-block:last-child {
+        margin: 0;
+    }
+
+    /* **************************
+    *                           *
+    *    Research Experience    *
+    *                           *
+    ************************** */
+    .research .research-block {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+
+        margin: 0 0 20px 0;
+
+        div {
+            margin: 0 0 4px 0;
+        }
+
+        &>div {
+            margin: 0 0 0 12px;
+        }
+
+        $mleft: 12px;
+
+        .research-institute {
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        .research-role {
+            font-style: italic;
+            margin-left: $mleft;
+        }
+
+        .research-date {
+            font-weight: bold;
+            font-size: small;
+            margin-left: $mleft;
+        }
+
+        img {
+            width: 20%;
+        }
+    }
+
+    .research>.research-block:last-child {
+        margin: 0;
+    }
+
+    /* ******************
+    *                   *
+    *    Publication    *
+    *                   *
+    ****************** */
+    .publication .pub-block {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+
+        margin: 0 0 20px 0;
+
+        div {
+            margin: 0 0 4px 0;
+        }
+
+        &>div {
+            margin: 0 0 0 12px;
+        }
+
+        pre {
+            display: none;
+            padding: 8px;
+            margin: 0 0 9px;
+            font-size: medium;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+
+            background-color: #f5f5f5;
+            line-height: 18px;
+            // ! Too new feature, but can replace the following wrapping setting
+            // text-wrap: wrap;
+            white-space: pre-wrap;
+            word-break: break-all;
+            word-wrap: break-word;
+
+            width: 100%;
+        }
+
+        $pub-image-width: min(0.3 * $max-width, 30vw);
+
+        .pub-content-wrapper {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: calc(100% - $pub-image-width);
+
+            .pub-content {
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: space-between;
+                align-items: flex-start;
+                min-height: calc($pub-image-width * 9 / 16);
+            }
+
+            .pub-title {
+                font-weight: bold;
+            }
+
+            .pub-author {
+                color: #606060;
+
+                b {
+                    text-decoration: underline;
+                }
+            }
+
+            .pub-conf {
+                font-weight: bold;
+            }
+
+            // .pub-misc {
+            // }
+        }
+
+
+        img {
+            max-height: calc($pub-image-width * 9 / 16);
+            max-width: calc($pub-image-width);
+            object-fit: contain;
+        }
+    }
+
+    .publication>.pub-block:last-child {
+        margin: 0;
     }
 }
