@@ -67,7 +67,7 @@
         }
 
         .aboutme-content {
-            width: calc($max-width - $profile-image-size - 32px);
+            width: calc(#{$max-width} - #{$profile-image-size} - 32px);
 
             @media screen and (max-width: $small-width) {
                 width: 100%;
@@ -222,14 +222,14 @@
             flex-flow: column nowrap;
             justify-content: flex-start;
             align-items: flex-start;
-            width: calc(100% - $pub-image-width);
+            width: calc(100% - #{$pub-image-width});
 
             .pub-content {
                 display: flex;
                 flex-flow: column nowrap;
                 justify-content: space-between;
                 align-items: flex-start;
-                min-height: calc($pub-image-width * 9 / 16);
+                min-height: calc(#{$pub-image-width} * 9 / 16);
             }
 
             .pub-title {
@@ -254,8 +254,8 @@
 
 
         img {
-            max-height: calc($pub-image-width * 9 / 16);
-            max-width: calc($pub-image-width);
+            max-height: calc(#{$pub-image-width} * 9 / 16);
+            max-width: calc(#{$pub-image-width});
             object-fit: contain;
         }
     }
