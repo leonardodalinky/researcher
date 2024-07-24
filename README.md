@@ -8,14 +8,26 @@ A clean, single column, monospace resume template built for jekyll
 
 Simply fork the repository and edit away.
 
+If `ruby>=3.0.0` not installed, recommand to use `rvm` for env manager.
+
 Install `jekyll`:
 ```bash
 gem install jekyll bundler
 ```
 
+If not having a `Gemfile`, run this:
+```bash
+bundle init
+bundle add jekyll
+# if ruby >= 3.0.0 and fail, add this
+bundle add webrick
+```
+
 And run `bundle`:
 ```bash
 bundle exec jekyll serve
+# livereload version
+bundle exec jekyll serve --livereload
 ```
 
 #### Installation via remote themes
