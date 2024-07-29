@@ -215,7 +215,7 @@
             width: 100%;
         }
 
-        $pub-image-width: min(0.3 * $max-width, 30vw);
+        $pub-image-width: min(0.35 * $max-width, 35vw);
 
         .pub-content-wrapper {
             display: flex;
@@ -257,6 +257,22 @@
             max-height: calc(#{$pub-image-width} * 9 / 16);
             max-width: calc(#{$pub-image-width});
             object-fit: contain;
+        }
+
+        .pub-tag {
+            display: inline-block;
+            height: 20px;
+            padding: 0 4px;
+            line-height: 19px;
+            background-color: #fff;
+            border-color: #b3d8ff;
+            color: #308eef;
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 4px;
+            box-sizing: border-box;
+            white-space: nowrap;
+            font-size: 12px;
         }
     }
 
