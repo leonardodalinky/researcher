@@ -76,6 +76,22 @@
         }
     </script>
 
+    <!-- Toggle Full Paper List -->
+    <script language="javascript" type="text/javascript">
+        var is_show_full_pub = false;
+        function toggleFullPubList() {
+            is_show_full_pub = !is_show_full_pub;
+            if (is_show_full_pub) {
+                document.getElementById("full-pub-list-button").innerHTML = "&#11167; Full Publications";
+                document.getElementById("full-pub-list").style.display = "block";
+            } else {
+                document.getElementById("full-pub-list-button").innerHTML = "&#11165; Full Publications";
+                document.getElementById("full-pub-list").style.display = "none";
+            }
+            console.log("nihao");
+        }
+    </script>
+
     <!-- MathJax -->
     <script>
         MathJax = {
