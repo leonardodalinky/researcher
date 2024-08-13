@@ -8,6 +8,8 @@ is_contact: true
 
 * Phone: [+86-137 117 15601](tel:+86-137 117 15601)
 
+* GitHub: [leonardodalinky](https://github.com/leonardodalinky)
+
 ---
 
 <!-- ## Mailing Address

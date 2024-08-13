@@ -57,10 +57,9 @@ title: Ke Lin
 
 <p>My current Research of Interest are:</p>
 <ul>
-  <li>3D Scene Layout</li>
-  <li>LLM-guided 3D Vision</li>
+  <li>3D Scene Arrangement</li>
+  <li>Text-guided 3D Vision</li>
   <li>Multi-modal 3D LLMs</li>
-  <li>Compositional 3D Vision</li>
 </ul>
 
 <hr />
@@ -122,31 +121,6 @@ title: Ke Lin
     </div>
   </div>
   <div class="pub-block">
-    <img src="img/paper/wm_collision.jpg" />
-    <div class="pub-content-wrapper">
-      <div class="pub-content">
-        <div class="pub-innerblock">
-          <div class="pub-title"><a href="https://arxiv.org/abs/2403.10020">
-              Lost in Overlap: Exploring Logit-based Watermark Collision in LLMs
-            </a></div>
-          <div class="pub-author">Yiyang Luo*, <b><u>Ke Lin*</u></b>, Chao Gu*, Ping Luo, Lijie Wen, Jiahui
-            Hou</div>
-          <div class="pub-conf">Under Review</div>
-          <div>
-            <span class="pub-tag">Watermark</span>
-          </div>
-        </div>
-        <div class="pub-misc">
-          <span>Code (TBD)</span>
-          |
-          <a href="javascript:void(0);" onclick="javascript:toggle(wm_collision_abs);">Abstract</a>
-        </div>
-      </div>
-      <pre
-        id="wm_collision_abs">The proliferation of large language models (LLMs) in generating content raises concerns about text copyright. Watermarking methods, particularly logit-based approaches, embed imperceptible identifiers into text to address these challenges. However, the widespread use of watermarking across diverse LLMs has led to an inevitable issue known as watermark collision during common tasks like question answering and paraphrasing. This study focuses on dual watermark collisions, where two watermarks are present simultaneously in the same text. The research demonstrates that watermark collision poses a threat to detection performance for detectors of both upstream and downstream watermark algorithms.</pre>
-    </div>
-  </div>
-  <div class="pub-block">
     <img src="img/paper/zgls.jpg" />
     <div class="pub-content-wrapper">
       <div class="pub-content">
@@ -172,6 +146,33 @@ title: Ke Lin
       </div>
       <pre
         id="zgls_abs">Generative linguistic steganography attempts to hide secret messages into covertext. Previous studies have generally focused on the statistical differences between the covertext and stegotext, however, ill-formed stegotext can readily be identified by humans. In this paper, we propose a novel zero-shot approach based on in-context learning for linguistic steganography to achieve better perceptual and statistical imperceptibility. We also design several new metrics and reproducible language evaluations to measure the imperceptibility of the stegotext. Our experimental results indicate that our method produces \(1.926\times\) more innocent and intelligible stegotext than any other method.</pre>
+    </div>
+  </div>
+  <div class="pub-block">
+    <img src="img/paper/llmpc.jpg" />
+    <div class="pub-content-wrapper">
+      <div class="pub-content">
+        <div class="pub-innerblock">
+          <div class="pub-title"><a href="http://arxiv.org/abs/2407.18982">
+              Low-Latency Privacy-Preserving Deep Learning Design via Secure MPC
+            </a></div>
+          <div class="pub-author"><b>Ke Lin</b>, Yasir Glani, Ping Luo</div>
+          <div class="pub-conf">IJCAI-2024 AISafety Workshop</div>
+          <div>
+            <span class="pub-tag">CCF A</span>
+            <span class="pub-tag">CORE A*</span>
+            <span class="pub-tag">Workshop</span>
+            <span class="pub-tag">Security</span>
+          </div>
+        </div>
+        <div class="pub-misc">
+          <a href="https://github.com/leonardodalinky/CrypTen_LLMPC" target="_blank">Code</a>
+          |
+          <a href="javascript:void(0);" onclick="javascript:toggle(llmpc_abs);">Abstract</a>
+        </div>
+      </div>
+      <pre
+        id="llmpc_abs">Secure multi-party computation (MPC) facilitates privacy-preserving computation between multiple parties without leaking private information.While most secure deep learning techniques utilize MPC operations to achieve feasible privacy-preserving machine learning on downstream tasks, the overhead of the computation and communication still hampers their practical application.This work proposes a low-latency secret-sharing-based MPC design that reduces unnecessary communication rounds during the execution of MPC protocols.We also present a method for improving the computation of commonly used nonlinear functions in deep learning by integrating multivariate multiplication and coalescing different packets into one to maximize network utilization.Our experimental results indicate that our method is effective in a variety of settings, with a speedup in communication latency of \(10\sim20\%\).</pre>
     </div>
   </div>
   <div class="pub-block">
@@ -202,30 +203,27 @@ title: Ke Lin
     </div>
   </div>
   <div class="pub-block">
-    <img src="img/paper/llmpc.jpg" />
+    <img src="img/paper/wm_collision.jpg" />
     <div class="pub-content-wrapper">
       <div class="pub-content">
         <div class="pub-innerblock">
-          <div class="pub-title"><a href="http://arxiv.org/abs/2407.18982">
-              Low-Latency Privacy-Preserving Deep Learning Design via Secure MPC
+          <div class="pub-title"><a href="https://arxiv.org/abs/2403.10020">
+              Lost in Overlap: Exploring Logit-based Watermark Collision in LLMs
             </a></div>
-          <div class="pub-author"><b>Ke Lin</b>, Yasir Glani, Ping Luo</div>
-          <div class="pub-conf">IJCAI-2024 AISafety Workshop</div>
+          <div class="pub-author">Yiyang Luo*, <b><u>Ke Lin*</u></b>, Chao Gu*</div>
+          <div class="pub-conf">Under Review</div>
           <div>
-            <span class="pub-tag">CCF A</span>
-            <span class="pub-tag">CORE A*</span>
-            <span class="pub-tag">Workshop</span>
-            <span class="pub-tag">Security</span>
+            <span class="pub-tag">Watermark</span>
           </div>
         </div>
         <div class="pub-misc">
-          <a href="https://github.com/leonardodalinky/CrypTen_LLMPC" target="_blank">Code</a>
+          <span>Code (TBD)</span>
           |
-          <a href="javascript:void(0);" onclick="javascript:toggle(llmpc_abs);">Abstract</a>
+          <a href="javascript:void(0);" onclick="javascript:toggle(wm_collision_abs);">Abstract</a>
         </div>
       </div>
       <pre
-        id="llmpc_abs">Secure multi-party computation (MPC) facilitates privacy-preserving computation between multiple parties without leaking private information.While most secure deep learning techniques utilize MPC operations to achieve feasible privacy-preserving machine learning on downstream tasks, the overhead of the computation and communication still hampers their practical application.This work proposes a low-latency secret-sharing-based MPC design that reduces unnecessary communication rounds during the execution of MPC protocols.We also present a method for improving the computation of commonly used nonlinear functions in deep learning by integrating multivariate multiplication and coalescing different packets into one to maximize network utilization.Our experimental results indicate that our method is effective in a variety of settings, with a speedup in communication latency of \(10\sim20\%\).</pre>
+        id="wm_collision_abs">The proliferation of large language models (LLMs) in generating content raises concerns about text copyright. Watermarking methods, particularly logit-based approaches, embed imperceptible identifiers into text to address these challenges. However, the widespread use of watermarking across diverse LLMs has led to an inevitable issue known as watermark collision during common tasks like question answering and paraphrasing. This study focuses on dual watermark collisions, where two watermarks are present simultaneously in the same text. The research demonstrates that watermark collision poses a threat to detection performance for detectors of both upstream and downstream watermark algorithms.</pre>
     </div>
   </div>
   <!-- Full Publications -->
