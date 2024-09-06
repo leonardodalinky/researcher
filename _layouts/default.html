@@ -55,6 +55,8 @@
     <meta name="twitter:image" content="{{ site.profile_picture }}">
     {% endif %}
 
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VE92RNTKWN"></script>
     <script>
@@ -68,28 +70,31 @@
     <!-- Toggle Abstract -->
     <script language="javascript" type="text/javascript">
         function toggle(element) {
-            if (element.style.display == "block") {
-                element.style.display = "none";
+            let ele = $(element);
+            if (ele.css("display") != "none") {
+                ele.hide("500ms");
             } else {
-                element.style.display = "block";
+                ele.show("500ms");
             }
         }
     </script>
 
     <!-- Toggle Full Paper List -->
     <script language="javascript" type="text/javascript">
-        var is_show_full_pub = false;
+        var is_show_full_pub = true;
         function toggleFullPubList() {
             is_show_full_pub = !is_show_full_pub;
+            let button = $("#full-pub-list-button");
+            let list = $("#full-pub-list");
             if (is_show_full_pub) {
-                document.getElementById("full-pub-list-button").innerHTML = "🔽 Full Publications";
-                document.getElementById("full-pub-list").style.display = "block";
+                list.slideDown("500ms", function() {button.html("🔽 Full Publications");});
             } else {
-                document.getElementById("full-pub-list-button").innerHTML = "🔼 Full Publications";
-                document.getElementById("full-pub-list").style.display = "none";
+                list.slideUp("500ms", function() {button.html("🔼 Full Publications");});
             }
-            console.log("nihao");
         }
+        $(document).ready(function() {
+            toggleFullPubList();
+        });
     </script>
 
     <!-- MathJax -->

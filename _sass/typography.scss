@@ -279,4 +279,8 @@
     .publication>.pub-block:last-child {
         margin: 0;
     }
+
+    .publication #full-pub-list {
+        overflow: hidden;
+    }
 }
