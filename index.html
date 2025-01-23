@@ -61,9 +61,10 @@ title: Ke Lin
 
 <b>My current Research of Interest are:</b>
 <ul>
-  <li>3D Scene Arrangement & Understanding</li>
+  <li>3D Scene Understanding & Arrangement</li>
   <li>Text-guided 3D Vision (NLP+3D)</li>
   <li>Multi-modal 3D LLMs</li>
+  <li>Embodied AI</li>
 </ul>
 
 <hr />
@@ -96,6 +97,34 @@ title: Ke Lin
 
 <div class="publication">
   <p>* denotes equal contribution.</p>
+  <div class="pub-block">
+    <img src="img/paper/wm_collision.jpg" />
+    <div class="pub-content-wrapper">
+      <div class="pub-content">
+        <div class="pub-innerblock">
+          <div class="pub-title"><a href="https://arxiv.org/abs/2403.10020">
+              Lost in Overlap: Exploring Logit-based Watermark Collision in LLMs
+            </a></div>
+          <div class="pub-author">Yiyang Luo*, <b><u>Ke Lin*</u></b>, Chao Gu*, Jiahui Hou, Lijie Wen, Ping Luo</div>
+          <div class="pub-conf">NAACL 2025 Findings</div>
+          <div>
+            <span class="pub-tag">CCF B</span>
+            <span class="pub-tag">CORE A</span>
+            <span class="pub-tag">Watermark</span>
+          </div>
+        </div>
+        <div class="pub-misc">
+          <a href="https://github.com/AInnovateLab/watermark-collision" target="_blank">Code</a>
+          |
+          <a href="javascript:void(0);" onclick="javascript:toggle(wm_collision_abs);">Abstract</a>
+          |
+          <a href="https://ainnovatelab.github.io/watermark-collision/" target="_blank">Project Page</a>
+        </div>
+      </div>
+      <pre
+        id="wm_collision_abs">The proliferation of large language models (LLMs) in generating content raises concerns about text copyright. Watermarking methods, particularly logit-based approaches, embed imperceptible identifiers into text to address these challenges. However, the widespread use of watermarking across diverse LLMs has led to an inevitable issue known as watermark collision during common tasks like question answering and paraphrasing. This study focuses on dual watermark collisions, where two watermarks are present simultaneously in the same text. The research demonstrates that watermark collision poses a threat to detection performance for detectors of both upstream and downstream watermark algorithms.</pre>
+    </div>
+  </div>
   <div class="pub-block">
     <img src="img/paper/calpcg.jpg" />
     <div class="pub-content-wrapper">
@@ -206,30 +235,6 @@ title: Ke Lin
         id="vired_abs">To accurately understand engineering drawings, it is essential to establish the correspondence between images and their description tables within the drawings. Existing document understanding methods predominantly focus on text as the main modality, which is not suitable for documents containing substantial image information. In the field of visual relation detection, the structure of the task inherently limits its capacity to assess relationships among all entity pairs in the drawings. To address this issue, we propose a vision-based relation detection model, named ViRED, to identify the associations between tables and circuits in electrical engineering drawings. Our model mainly consists of three parts: a vision encoder, an object encoder, and a relation decoder. We implement ViRED using PyTorch to evaluate its performance. To validate the efficacy of ViRED, we conduct a series of experiments. The experimental results indicate that, within the engineering drawing dataset, our approach attained an accuracy of 96% in the task of relation prediction, marking a substantial improvement over existing methodologies. The results also show that ViRED can inference at a fast speed even when there are numerous objects in a single engineering drawing.</pre>
     </div>
   </div>
-  <div class="pub-block">
-    <img src="img/paper/wm_collision.jpg" />
-    <div class="pub-content-wrapper">
-      <div class="pub-content">
-        <div class="pub-innerblock">
-          <div class="pub-title"><a href="https://arxiv.org/abs/2403.10020">
-              Lost in Overlap: Exploring Logit-based Watermark Collision in LLMs
-            </a></div>
-          <div class="pub-author">Yiyang Luo*, <b><u>Ke Lin*</u></b>, Chao Gu*</div>
-          <div class="pub-conf">Under Review</div>
-          <div>
-            <span class="pub-tag">Watermark</span>
-          </div>
-        </div>
-        <div class="pub-misc">
-          <span>Code (TBD)</span>
-          |
-          <a href="javascript:void(0);" onclick="javascript:toggle(wm_collision_abs);">Abstract</a>
-        </div>
-      </div>
-      <pre
-        id="wm_collision_abs">The proliferation of large language models (LLMs) in generating content raises concerns about text copyright. Watermarking methods, particularly logit-based approaches, embed imperceptible identifiers into text to address these challenges. However, the widespread use of watermarking across diverse LLMs has led to an inevitable issue known as watermark collision during common tasks like question answering and paraphrasing. This study focuses on dual watermark collisions, where two watermarks are present simultaneously in the same text. The research demonstrates that watermark collision poses a threat to detection performance for detectors of both upstream and downstream watermark algorithms.</pre>
-    </div>
-  </div>
   <!-- Full Publications -->
   <div style="width: 100%; margin: 20px; text-align: center;">
     <a id="full-pub-list-button" href="javascript:void(0);" onclick="javascript:toggleFullPubList();">🔼 Full
@@ -332,5 +337,6 @@ title: Ke Lin
 <h2>Awards and Scholarships</h2>
 
 <ul>
+  <li>2024 Tsinghua-Ubiquant Scholarship</li>
   <li>2019 The Second Prize Scholarship</li>
 </ul>
