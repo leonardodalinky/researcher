@@ -20,6 +20,6 @@ nav:
   - name: "About"
     link: "/researcher/"
   - name: "CV"
-    link: "CV_KeLin.pdf"
+    link: "https://ayajilin.cn/share/CV_KeLin.pdf"
   - name: "Contact"
     link: "contact"
