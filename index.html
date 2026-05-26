@@ -12,8 +12,7 @@ title: Ke Lin
       Ke Lin (sounds like <em>kěr-lín</em> or /kʰɤˇ/ /lɪnˊ/).
     </p>
     <p>
-      I am a Ph.D. student in College of William & Mary in Data Science, supervised by <a
-        href="https://eaglew.github.io/">Prof. Qingyun Wang</a>.
+      I collaborated with <a href="https://eaglew.github.io/">Prof. Qingyun Wang</a> at College of William & Mary.
       I obtained my master's degree in Software Engineering from Tsinghua University, supervised by <a
         href="https://www.thss.tsinghua.edu.cn/en/faculty/pingluo.htm">Prof. Ping Luo</a>, and my bachelor's degree
       in Software Engineering from Tsinghua University, advised by <a
@@ -28,14 +27,6 @@ title: Ke Lin
 <h2>Education</h2>
 
 <div class="education">
-  <div class="education-block">
-    <img src="img/wm_vertical_stacked_full_color.png" />
-    <div>
-      <div class="education-school">College of William & Mary</div>
-      <div class="education-date">2025.09 - Present</div>
-      <div class="education-degree">Ph.D. in Data Science</div>
-    </div>
-  </div>
   <div class="education-block">
     <img src="img/tsinghua-university-logo.png" />
     <div>
@@ -62,8 +53,7 @@ title: Ke Lin
   Computation.</p> -->
 
 <ul>
-  <li>Automated Research</li>
-  <li>Multimodal Models for Science</li>
+  <li>Diffusion Language Model</li>
   <li>AI for Research</li>
   <li>AI for Science</li>
 </ul>
@@ -73,6 +63,15 @@ title: Ke Lin
 <h2>Research Experiences</h2>
 
 <div class="research">
+  <div class="research-block">
+    <img src="img/WM_Logo_Stacked_Green_Gold.png" />
+    <div>
+      <div class="research-institute"><a href="https://www.wm.edu/">College of
+          William & Mary</a></div>
+      <div class="research-date">2025.09 - 2026.06</div>
+      <div class="research-role">Research Assistant</div>
+    </div>
+  </div>
   <div class="research-block">
     <img src="img/tencent-logo.png" />
     <div>
@@ -99,19 +98,45 @@ title: Ke Lin
 <div class="publication">
   <p>* denotes equal contribution.</p>
   <div class="pub-block">
+    <img src="img/paper/b3d-rwkv.png" />
+    <div class="pub-content-wrapper">
+      <div class="pub-content">
+        <div class="pub-innerblock">
+          <div class="pub-title"><a href="https://arxiv.org/abs/2605.25969">
+              Triplet-Block Diffusion RWKV
+            </a></div>
+          <div class="pub-author"><b><u>Ke Lin*</u></b>, Yiyang Luo*, Zhaolong Su, Yunya Song, Anyi Rao
+          </div>
+          <div class="pub-conf">ArXiv 2026</div>
+          <div>
+            <span class="pub-tag">dLLM</span>
+          </div>
+        </div>
+        <div class="pub-misc">
+          <a href="https://github.com/leonardodalinky/B3D-RWKV" target="_blank">Code</a>
+          |
+          <a href="javascript:void(0);" onclick="javascript:toggle(scider_abs);">Abstract</a>
+          |
+          <a href="https://huggingface.co/leonardklin/B3D-RWKV" target="_blank">Model</a>
+        </div>
+      </div>
+      <pre
+        id="scider_abs">Causal Transformer language models suffer from strictly sequential decoding and a quadratic per-step attention cost, resulting in expensive inference and an inability to revise previous tokens during text generation. While linear-time causal models and discrete diffusion models each address these weaknesses, their integration remains inherently inconsistent and underdeveloped. In this work, we propose B3D-RWKV, a diffusion-based RWKV variant that integrates the model's $\mathcal{O}(L)$ inference efficiency with parallel, bidirectional discrete-diffusion through a triplet-block layout method. B3D-RWKV-7.2B reaches comparable accuracy on an 8-task suite versus existing models while significantly outperforming baselines in decoding throughput with an average of $\mathbf{1.6\times}$ speedup..</pre>
+    </div>
+  </div>
+  <div class="pub-block">
     <img src="img/paper/scider.png" />
     <div class="pub-content-wrapper">
       <div class="pub-content">
         <div class="pub-innerblock">
-          <div class="pub-title"><a href="https://github.com/leonardodalinky/my-paper/blob/fe18bcda025dc67120715dbb17a0e195de759d2d/2603.01421v1.pdf">
+          <div class="pub-title"><a href="https://arxiv.org/abs/2603.01421">
               SciDER: Scientific Data-centric End-to-end Researcher
             </a></div>
-          <div class="pub-author"><b><u>Ke Lin</u></b>, Yilin Lu, Shreyas Bhat, Xuehang Guo, Junier Oliva, Qingyun Wang
+          <div class="pub-author"><b><u>Ke Lin</u></b>, Owais Aijaz, Yilin Lu, Shreyas Bhat, Xuehang Guo, Preslav Nakov,
+            Junier Oliva
           </div>
-          <div class="pub-conf">ArXiv</div>
+          <div class="pub-conf">ArXiv 2026</div>
           <div>
-            <!-- <span class="pub-tag">CCF B</span>
-            <span class="pub-tag">CORE A</span> -->
             <span class="pub-tag">AI4Research</span>
           </div>
         </div>
@@ -122,11 +147,11 @@ title: Ke Lin
           |
           <a href="https://harryluumn.github.io/scider-proj-page/" target="_blank">Project Page</a>
           |
-          <a href="https://huggingface.co/spaces/AI4Research/scider" target="_blank">Live Demo</a>
+          <a href="https://huggingface.co/spaces/leonardklin/scider" target="_blank">Live Demo</a>
         </div>
       </div>
       <pre
-        id="scider_abs">Automated scientific discovery with large language models is transforming the research lifecycle from ideation to experimentation, yet existing agents struggle to autonomously process raw data collected from scientific experiments. We introduce SciDER, a data-centric end-to-end system that automates the research lifecycle. Unlike traditional frameworks, our specialized agents collaboratively parse and analyze raw scientific data, generate hypotheses and experimental designs grounded in specific data characteristics, and write and execute corresponding code. Evaluation on three benchmarks shows SciDER excels in specialized data-driven scientific discovery and outperforms general-purpose agents and state-of-the-art models through its self-evolving memory and critic-led feedback loop. Distributed as a modular Python package, we also provide easy-to-use PyPI packages with a lightweight web interface to accelerate autonomous, data-driven research and aim to be accessible to all researchers and developers.</pre>
+        id="scider_abs">While large language models accelerate scientific discovery, existing agents struggle to autonomously process raw, multimodal, and domain-specific experimental data. We introduce SciDER, an autonomous system that automates the research lifecycle. Equipped with a dynamic multimodal skill system, SciDER utilizes specialized agents to generate hypotheses via Evolutionary Idea Search, analyze raw data, and synthesize executable code grounded in specific data characteristics. These processes are iteratively refined by a critic-led feedback loop. To support open-source research, we release OpenSciDER-SFT-8K, a curated trajectory dataset, and the OpenSciDER-27B fine-tuned model. Comprehensive evaluations across ideation, multimodal data analysis, and coding benchmarks demonstrate that SciDER significantly outperforms state-of-the-art agents, effectively bridging the gap between scientific reasoning and experimental synthesis.</pre>
     </div>
   </div>
   <div class="pub-block">
