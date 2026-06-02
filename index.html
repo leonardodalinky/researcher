@@ -28,6 +28,15 @@ title: Ke Lin
 
 <div class="education">
   <div class="education-block">
+    <img src="img/WM_Logo_Stacked_Green_Gold.png" />
+    <div>
+      <div class="education-school">College of William & Mary</div>
+      <div class="education-date">2025.09 - 2026.07</div>
+      <div class="education-degree">Ph.D in Data Science (withdrawn)</div>
+      <div class="education-note" id="edu-visa-note" data-nosnippet></div>
+    </div>
+  </div>
+  <div class="education-block">
     <img src="img/tsinghua-university-logo.png" />
     <div>
       <div class="education-school">Tsinghua University</div>
@@ -63,15 +72,6 @@ title: Ke Lin
 <h2>Research Experiences</h2>
 
 <div class="research">
-  <div class="research-block">
-    <img src="img/WM_Logo_Stacked_Green_Gold.png" />
-    <div>
-      <div class="research-institute"><a href="https://www.wm.edu/">College of
-          William & Mary</a></div>
-      <div class="research-date">2025.09 - 2026.06</div>
-      <div class="research-role">Research Assistant</div>
-    </div>
-  </div>
   <div class="research-block">
     <img src="img/tencent-logo.png" />
     <div>
@@ -133,7 +133,7 @@ title: Ke Lin
               href="https://github.com/leonardodalinky/my-paper/blob/1202212bf9ea624d297bec273a046c6f226ccebf/SciDER_202606.pdf">
               SciDER: Scientific Data-centric End-to-end Researcher
             </a></div>
-          <div class="pub-author"><b><u>Ke Lin</u></b>, Owais Aijaz, Yilin Lu, Xuehang Guo, Preslav Nakov</div>
+          <div class="pub-author"><b><u>Ke Lin</u></b>, Owais Aijaz, Yilin Lu, Yiyang Luo, Xuehang Guo, Preslav Nakov</div>
           <div class="pub-conf">ArXiv 2026</div>
           <div>
             <span class="pub-tag">AI4Research</span>
@@ -398,3 +398,14 @@ title: Ke Lin
   <li>2024 Tsinghua-Ubiquant Scholarship</li>
   <li>2019 The Second Prize Scholarship</li>
 </ul>
+
+<!-- Inject the withdrawal note at runtime so it stays out of the static HTML source
+     (defeats non-JS crawlers / bulk scrapers). UTF-8-safe base64 decode. -->
+<script type="text/javascript">
+  (function () {
+    var b = "V2l0aGRyYXduIGFmdGVyIG15IFUuUy4gdmlzYSB3YXMgPGEgaHJlZj0iaW1nL3dtX25vdGUucG5nIiB0YXJnZXQ9Il9ibGFuayI+cHJ1ZGVudGlhbGx5IHJldm9rZWQ8L2E+IOKAlCBiZXlvbmQgbXkgY29udHJvbC4=";
+    var html = decodeURIComponent(escape(window.atob(b)));
+    var el = document.getElementById("edu-visa-note");
+    if (el) { el.innerHTML = html; }
+  })();
+</script>
