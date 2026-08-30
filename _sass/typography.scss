@@ -177,6 +177,17 @@
             margin-left: $mleft;
         }
 
+        .research-note {
+            font-size: small;
+            color: #888;
+            margin-left: $mleft;
+
+            a {
+                color: inherit;
+                text-decoration: underline;
+            }
+        }
+
         img {
             width: 20%;
         }
